@@ -29,8 +29,8 @@ class UIDisplayView: UIView{
         let nib = UINib(nibName: "DisplayView", bundle: nil)
         nib.instantiate(withOwner: self, options: nil)
         self.view.frame = bounds
-        label.numberOfLines = 1;
-        label.adjustsFontSizeToFitWidth = true;
+        //label.numberOfLines = 1;
+        //label.adjustsFontSizeToFitWidth = true;
         addSubview(view)
         
     }

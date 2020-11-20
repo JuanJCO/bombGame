@@ -10,15 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    // MARK: Outlets
+    // MARK: Outlets & Arrays
     
     @IBOutlet weak var leftBtn: UIButton!
     @IBOutlet weak var rightBtn: UIButton!
     
-    @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var display: UIDisplayView!
-    
-    // MARK: Number Arrays
+    @IBOutlet weak var displayLabel: UILabel!
     
     var arrayNumberNegative = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11]
     var arrayNumberPositive = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -28,8 +26,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         displayLabel = display.label
 
+        //Números Negativos
         //Asigna un número aleatorio negativo y lo imprime en su correspondiente Label
         let randomNumberNegative = arrayNumberNegative.randomElement()
         leftBtn.setTitle(String(randomNumberNegative!), for: UIControl.State.normal)
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
             }
         }
         
-        //Lo mismo, pero con los números positivos
+        //Números Positivos
         let randomNumberPositive = arrayNumberPositive.randomElement()
         rightBtn.setTitle(String(randomNumberPositive!), for: UIControl.State.normal)
         
