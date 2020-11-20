@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftBtn: UIButton!
     @IBOutlet weak var rightBtn: UIButton!
     
-    @IBOutlet weak var countLabel: UILabel!
-    
+    @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var display: UIDisplayView!
     
     // MARK: Number Arrays
@@ -29,6 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        displayLabel = display.label
 
         //Asigna un número aleatorio negativo y lo imprime en su correspondiente Label
         let randomNumberNegative = arrayNumberNegative.randomElement()
@@ -59,12 +59,12 @@ class ViewController: UIViewController {
     @IBAction func leftBtnAction(_ sender: Any) {
             
         //Parseo a Int el .text del Label negativo y el del contador
-        let countLabelNumber = Int(countLabel.text!)
+        let countLabelNumber = Int(displayLabel.text!)
         let leftLabelNumber = Int(leftBtn.titleLabel!.text!)!
         
         //Almaceno el cálculo de ambos números y lo muestro en el label del contador
         let sum = countLabelNumber! + leftLabelNumber
-        countLabel.text = String(sum)
+        displayLabel.text = String(sum)
         
         //Compruebo si el array de números sigue teniendo contenido
         //Si aún no está vacío, recojo una posición aleatoria y la muestro en el label
@@ -83,17 +83,17 @@ class ViewController: UIViewController {
         }
         
         //Cambio el color del texto del contador, para indicar visualmente lo cerca/lejos que estás del número 21
-        if (Int(countLabel.text!)! < 10){
-            countLabel.textColor = UIColor.red
+        if (Int(displayLabel.text!)! < 10){
+            displayLabel.textColor = UIColor.red
         }
-        if (Int(countLabel.text!)! > 9 && Int(countLabel.text!)! < 19){
-            countLabel.textColor = UIColor.yellow
+        if (Int(displayLabel.text!)! > 9 && Int(displayLabel.text!)! < 19){
+            displayLabel.textColor = UIColor.yellow
         }
-        if (Int(countLabel.text!)! > 18 && Int(countLabel.text!)! < 21){
-            countLabel.textColor = UIColor.blue
+        if (Int(displayLabel.text!)! > 18 && Int(displayLabel.text!)! < 21){
+            displayLabel.textColor = UIColor.blue
         }
-        if (Int(countLabel.text!)! == 21){
-            countLabel.textColor = UIColor.green
+        if (Int(displayLabel.text!)! == 21){
+            displayLabel.textColor = UIColor.green
         }
         
     }
@@ -103,11 +103,11 @@ class ViewController: UIViewController {
     //Su explicación es la misma que en la anterior función
     @IBAction func rightBtnAction(_ sender: Any) {
         
-        let countLabelNumber = Int(countLabel.text!)
+        let countLabelNumber = Int(displayLabel.text!)
         let rightLabelNumber = Int(rightBtn.titleLabel!.text!)!
         
         let sum = countLabelNumber! + rightLabelNumber
-        countLabel.text = String(sum)
+        displayLabel.text = String(sum)
         
         if (!arrayNumberPositive.isEmpty){
             let randomNumberPositive = arrayNumberPositive.randomElement()
@@ -122,17 +122,17 @@ class ViewController: UIViewController {
             rightBtn.setTitle("0", for: .normal)
         }
         
-        if (Int(countLabel.text!)! < 10){
-            countLabel.textColor = UIColor.red
+        if (Int(displayLabel.text!)! < 10){
+            displayLabel.textColor = UIColor.red
         }
-        if (Int(countLabel.text!)! > 9 && Int(countLabel.text!)! < 19){
-            countLabel.textColor = UIColor.yellow
+        if (Int(displayLabel.text!)! > 9 && Int(displayLabel.text!)! < 19){
+            displayLabel.textColor = UIColor.yellow
         }
-        if (Int(countLabel.text!)! > 18 && Int(countLabel.text!)! < 21){
-            countLabel.textColor = UIColor.blue
+        if (Int(displayLabel.text!)! > 18 && Int(displayLabel.text!)! < 21){
+            displayLabel.textColor = UIColor.blue
         }
-        if (Int(countLabel.text!)! == 21){
-            countLabel.textColor = UIColor.green
+        if (Int(displayLabel.text!)! == 21){
+            displayLabel.textColor = UIColor.green
         }
     }
 }

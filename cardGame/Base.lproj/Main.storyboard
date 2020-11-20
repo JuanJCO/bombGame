@@ -70,8 +70,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="d0m-mK-lns" id="xKh-xo-hRl"/>
                         <outlet property="display" destination="NWb-7F-QsS" id="hs2-bz-pGI"/>
+                        <outlet property="displayLabel" destination="d0m-mK-lns" id="xKh-xo-hRl"/>
                         <outlet property="leftBtn" destination="eFL-X0-R6u" id="kXF-2p-5r4"/>
                         <outlet property="rightBtn" destination="zfw-fm-7Vg" id="eD6-OV-1Fa"/>
                     </connections>

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bombaPNG.png",
+      "filename" : "bombaPNGResized.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bombaPNG-1.png",
+      "filename" : "bombaPNGResized-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bombaPNG-2.png",
+      "filename" : "bombaPNGResized-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
