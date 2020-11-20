@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
     
+    @IBOutlet weak var display: UIDisplayView!
+    
     // MARK: Number Arrays
     
     var arrayNumberNegative = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11]
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         //Asigna un número aleatorio negativo y lo imprime en su correspondiente Label
         let randomNumberNegative = arrayNumberNegative.randomElement()
@@ -51,14 +54,15 @@ class ViewController: UIViewController {
     
     // MARK: UI Functions
     
-    //Negative Number Button Logic
+    //NEGATIVE NUMBER FUNCTION LOGIC
+    
     @IBAction func leftBtnAction(_ sender: Any) {
             
         //Parseo a Int el .text del Label negativo y el del contador
         let countLabelNumber = Int(countLabel.text!)
         let leftLabelNumber = Int(leftBtn.titleLabel!.text!)!
         
-        //Almaceno el cálculo de ambos números y lo muestro en .text del contador parseado a String
+        //Almaceno el cálculo de ambos números y lo muestro en el label del contador
         let sum = countLabelNumber! + leftLabelNumber
         countLabel.text = String(sum)
         
@@ -78,13 +82,14 @@ class ViewController: UIViewController {
             leftBtn.setTitle("0", for: .normal)
         }
         
+        //Cambio el color del texto del contador, para indicar visualmente lo cerca/lejos que estás del número 21
         if (Int(countLabel.text!)! < 10){
             countLabel.textColor = UIColor.red
         }
-        if (Int(countLabel.text!)! > 10 && Int(countLabel.text!)! < 20){
+        if (Int(countLabel.text!)! > 9 && Int(countLabel.text!)! < 19){
             countLabel.textColor = UIColor.yellow
         }
-        if (Int(countLabel.text!)! == 20){
+        if (Int(countLabel.text!)! > 18 && Int(countLabel.text!)! < 21){
             countLabel.textColor = UIColor.blue
         }
         if (Int(countLabel.text!)! == 21){
@@ -93,7 +98,8 @@ class ViewController: UIViewController {
         
     }
     
-    //Positive Number Button Logic
+    //POSITIVE NUMBER FUNCTION LOGIC
+    
     //Su explicación es la misma que en la anterior función
     @IBAction func rightBtnAction(_ sender: Any) {
         
@@ -119,10 +125,10 @@ class ViewController: UIViewController {
         if (Int(countLabel.text!)! < 10){
             countLabel.textColor = UIColor.red
         }
-        if (Int(countLabel.text!)! > 10 && Int(countLabel.text!)! < 20){
+        if (Int(countLabel.text!)! > 9 && Int(countLabel.text!)! < 19){
             countLabel.textColor = UIColor.yellow
         }
-        if (Int(countLabel.text!)! == 20){
+        if (Int(countLabel.text!)! > 18 && Int(countLabel.text!)! < 21){
             countLabel.textColor = UIColor.blue
         }
         if (Int(countLabel.text!)! == 21){
