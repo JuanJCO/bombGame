@@ -11,25 +11,25 @@ class ViewController: UIViewController {
     
     
     // MARK: Outlets
-    @IBOutlet weak var leftBtn: UIButton!
-    @IBOutlet weak var leftLabel: UILabel!
     
+    @IBOutlet weak var leftBtn: UIButton!
     @IBOutlet weak var rightBtn: UIButton!
-    @IBOutlet weak var rightLabel: UILabel!
     
     @IBOutlet weak var countLabel: UILabel!
     
     // MARK: Number Arrays
+    
     var arrayNumberNegative = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11]
     var arrayNumberPositive = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
     //MARK: ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //Asigna un número aleatorio negativo y lo imprime en su correspondiente Label
         let randomNumberNegative = arrayNumberNegative.randomElement()
-        leftLabel.text = String(randomNumberNegative!)
+        leftBtn.setTitle(String(randomNumberNegative!), for: UIControl.State.normal)
         
         //Elimino la posición del array, para que no vuelva a aparecer en la partida
         for (i, v) in arrayNumberNegative.enumerated(){
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         //Lo mismo, pero con los números positivos
         let randomNumberPositive = arrayNumberPositive.randomElement()
-        rightLabel.text = String(randomNumberPositive!)
+        rightBtn.setTitle(String(randomNumberPositive!), for: UIControl.State.normal)
         
         for (i, v) in arrayNumberPositive.enumerated(){
             if (v == randomNumberPositive){
@@ -56,17 +56,17 @@ class ViewController: UIViewController {
             
         //Parseo a Int el .text del Label negativo y el del contador
         let countLabelNumber = Int(countLabel.text!)
-        let leftLabelNumber = Int(leftLabel.text!)
+        let leftLabelNumber = Int(leftBtn.titleLabel!.text!)!
         
         //Almaceno el cálculo de ambos números y lo muestro en .text del contador parseado a String
-        let sum = countLabelNumber! + leftLabelNumber!
+        let sum = countLabelNumber! + leftLabelNumber
         countLabel.text = String(sum)
         
         //Compruebo si el array de números sigue teniendo contenido
         //Si aún no está vacío, recojo una posición aleatoria y la muestro en el label
         if (!arrayNumberNegative.isEmpty){
             let randomNumberNegative = arrayNumberNegative.randomElement()
-            leftLabel.text = String(randomNumberNegative!)
+            leftBtn.setTitle(String(randomNumberNegative!), for: .normal)
             
             for (i, v) in arrayNumberNegative.enumerated(){
                 if (v == randomNumberNegative){
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             }
             //Si el array está vacío, le asigno el número 0, de manera que su interacción no tenga ningún efecto
         } else {
-            leftLabel.text = "0"
+            leftBtn.setTitle("0", for: .normal)
         }
     }
     
@@ -84,14 +84,14 @@ class ViewController: UIViewController {
     @IBAction func rightBtnAction(_ sender: Any) {
         
         let countLabelNumber = Int(countLabel.text!)
-        let rightLabelNumber = Int(rightLabel.text!)
+        let rightLabelNumber = Int(rightBtn.titleLabel!.text!)!
         
-        let sum = countLabelNumber! + rightLabelNumber!
+        let sum = countLabelNumber! + rightLabelNumber
         countLabel.text = String(sum)
         
         if (!arrayNumberPositive.isEmpty){
             let randomNumberPositive = arrayNumberPositive.randomElement()
-            rightLabel.text = String(randomNumberPositive!)
+            rightBtn.setTitle(String(randomNumberPositive!), for: .normal)
             
             for (i,v) in arrayNumberPositive.enumerated(){
                 if (v == randomNumberPositive){
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
                 }
             }
         } else {
-            rightLabel.text = "0"
+            rightBtn.setTitle("0", for: .normal)
         }
     }
 }
