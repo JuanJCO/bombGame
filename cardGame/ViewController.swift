@@ -77,6 +77,20 @@ class ViewController: UIViewController {
         } else {
             leftBtn.setTitle("0", for: .normal)
         }
+        
+        if (Int(countLabel.text!)! < 10){
+            countLabel.textColor = UIColor.red
+        }
+        if (Int(countLabel.text!)! > 10 && Int(countLabel.text!)! < 20){
+            countLabel.textColor = UIColor.yellow
+        }
+        if (Int(countLabel.text!)! == 20){
+            countLabel.textColor = UIColor.blue
+        }
+        if (Int(countLabel.text!)! == 21){
+            countLabel.textColor = UIColor.green
+        }
+        
     }
     
     //Positive Number Button Logic
@@ -100,6 +114,19 @@ class ViewController: UIViewController {
             }
         } else {
             rightBtn.setTitle("0", for: .normal)
+        }
+        
+        if (Int(countLabel.text!)! < 10){
+            countLabel.textColor = UIColor.red
+        }
+        if (Int(countLabel.text!)! > 10 && Int(countLabel.text!)! < 20){
+            countLabel.textColor = UIColor.yellow
+        }
+        if (Int(countLabel.text!)! == 20){
+            countLabel.textColor = UIColor.blue
+        }
+        if (Int(countLabel.text!)! == 21){
+            countLabel.textColor = UIColor.green
         }
     }
 }
