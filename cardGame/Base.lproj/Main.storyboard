@@ -26,10 +26,10 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
                                 <state key="normal" title="740"/>
                                 <connections>
-                                    <action selector="leftBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nr-PM-qH3"/>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yOU-vp-eKu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-fm-7Vg" userLabel="Right Btn">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-fm-7Vg" userLabel="Right Btn">
                                 <rect key="frame" x="904" y="1046" width="80" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
                                 <state key="normal" title="980"/>
                                 <connections>
-                                    <action selector="rightBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="59R-tL-N6O"/>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zI-bg-BCt"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-7F-QsS" customClass="UIDisplayView" customModule="cardGame" customModuleProvider="target">

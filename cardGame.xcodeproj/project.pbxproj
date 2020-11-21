@@ -15,6 +15,10 @@
 		E1AB015F25667919004DECA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AB015D25667919004DECA2 /* LaunchScreen.storyboard */; };
 		E1AB016825681B10004DECA2 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB016725681B0F004DECA2 /* DisplayView.swift */; };
 		E1AB016B25681B22004DECA2 /* DisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AB016A25681B22004DECA2 /* DisplayView.xib */; };
+		E1AB01742569910F004DECA2 /* digital-7 (mono italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB01702569910F004DECA2 /* digital-7 (mono italic).ttf */; };
+		E1AB01752569910F004DECA2 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB01712569910F004DECA2 /* digital-7.ttf */; };
+		E1AB01762569910F004DECA2 /* digital-7 (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB01722569910F004DECA2 /* digital-7 (italic).ttf */; };
+		E1AB01772569910F004DECA2 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB01732569910F004DECA2 /* digital-7 (mono).ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E1AB016025667919004DECA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1AB016725681B0F004DECA2 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		E1AB016A25681B22004DECA2 /* DisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayView.xib; sourceTree = "<group>"; };
+		E1AB01702569910F004DECA2 /* digital-7 (mono italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (mono italic).ttf"; path = "../../../../../../../Downloads/digital-7/digital-7 (mono italic).ttf"; sourceTree = "<group>"; };
+		E1AB01712569910F004DECA2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../../../../../Downloads/digital-7/digital-7.ttf"; sourceTree = "<group>"; };
+		E1AB01722569910F004DECA2 /* digital-7 (italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (italic).ttf"; path = "../../../../../../../Downloads/digital-7/digital-7 (italic).ttf"; sourceTree = "<group>"; };
+		E1AB01732569910F004DECA2 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (mono).ttf"; path = "../../../../../../../Downloads/digital-7/digital-7 (mono).ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 				E1AB015D25667919004DECA2 /* LaunchScreen.storyboard */,
 				E1AB016025667919004DECA2 /* Info.plist */,
 				E1AB016D25681B3E004DECA2 /* DisplayView */,
+				E1AB016F256990CE004DECA2 /* Fonts */,
 			);
 			path = cardGame;
 			sourceTree = "<group>";
@@ -79,6 +88,17 @@
 				E1AB016725681B0F004DECA2 /* DisplayView.swift */,
 			);
 			path = DisplayView;
+			sourceTree = "<group>";
+		};
+		E1AB016F256990CE004DECA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB01722569910F004DECA2 /* digital-7 (italic).ttf */,
+				E1AB01702569910F004DECA2 /* digital-7 (mono italic).ttf */,
+				E1AB01732569910F004DECA2 /* digital-7 (mono).ttf */,
+				E1AB01712569910F004DECA2 /* digital-7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1AB015F25667919004DECA2 /* LaunchScreen.storyboard in Resources */,
+				E1AB01752569910F004DECA2 /* digital-7.ttf in Resources */,
 				E1AB016B25681B22004DECA2 /* DisplayView.xib in Resources */,
+				E1AB01742569910F004DECA2 /* digital-7 (mono italic).ttf in Resources */,
+				E1AB01772569910F004DECA2 /* digital-7 (mono).ttf in Resources */,
+				E1AB01762569910F004DECA2 /* digital-7 (italic).ttf in Resources */,
 				E1AB015C25667919004DECA2 /* Assets.xcassets in Resources */,
 				E1AB015A25667916004DECA2 /* Main.storyboard in Resources */,
 			);
