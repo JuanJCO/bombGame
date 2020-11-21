@@ -13,6 +13,8 @@ class UIDisplayView: UIView{
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var label: UILabel!
     
+    let relativeFont: CGFloat = 0.15
+    
     override init(frame: CGRect) {
         super.init (frame: frame)
         initView()
@@ -29,8 +31,7 @@ class UIDisplayView: UIView{
         let nib = UINib(nibName: "DisplayView", bundle: nil)
         nib.instantiate(withOwner: self, options: nil)
         self.view.frame = bounds
-        //label.numberOfLines = 1;
-        //label.adjustsFontSizeToFitWidth = true;
+        //label.font = label.font.withSize(self.view.frame.height * relativeFont)
         addSubview(view)
         
     }
