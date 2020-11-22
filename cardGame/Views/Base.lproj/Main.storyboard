@@ -119,7 +119,7 @@ Suerte.
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="70"/>
+                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                         </variation>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIC-xs-8kz">
@@ -151,9 +151,8 @@ Suerte.
                                     <constraint firstItem="sMW-T9-Hca" firstAttribute="centerX" secondItem="eL2-xG-mcd" secondAttribute="centerX" id="pUH-lI-5UJ"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explosionIMG" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-pb-cmu" userLabel="Explosion">
-                                <rect key="frame" x="20" y="39" width="374" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explosionIMG" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-pb-cmu" userLabel="Explosion">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQR-4O-3IU" userLabel="Win view">
                                 <rect key="frame" x="20" y="404" width="374" height="472"/>
@@ -189,6 +188,8 @@ Lo has conseguido.
                         <constraints>
                             <constraint firstItem="NWb-7F-QsS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Da-FU-Ndu"/>
                             <constraint firstItem="57Y-Az-hWk" firstAttribute="top" secondItem="bfr-D5-V3D" secondAttribute="bottom" constant="30" id="5Vs-4l-a0x"/>
+                            <constraint firstItem="Je6-pb-cmu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Az-Yz-PzX"/>
+                            <constraint firstItem="Je6-pb-cmu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BQQ-Ub-gnd"/>
                             <constraint firstItem="57Y-Az-hWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="DV3-U3-791"/>
                             <constraint firstItem="eL2-xG-mcd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fnv-Hm-MBL"/>
                             <constraint firstItem="eL2-xG-mcd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="GXH-qG-nCl"/>
@@ -196,6 +197,8 @@ Lo has conseguido.
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NWb-7F-QsS" secondAttribute="trailing" constant="50" id="Kc4-Gy-W10"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="57Y-Az-hWk" secondAttribute="bottom" constant="50" id="NsG-Cz-Qww"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="57Y-Az-hWk" secondAttribute="trailing" constant="50" id="RAF-Y8-B3e"/>
+                            <constraint firstAttribute="bottom" secondItem="Je6-pb-cmu" secondAttribute="bottom" id="Rmx-qH-sYi"/>
+                            <constraint firstAttribute="trailing" secondItem="Je6-pb-cmu" secondAttribute="trailing" id="VX5-x5-eqa"/>
                             <constraint firstAttribute="bottom" secondItem="EQR-4O-3IU" secondAttribute="bottom" constant="20" id="Vkt-iJ-7xz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bfr-D5-V3D" secondAttribute="trailing" constant="20" id="aLG-K0-uXH"/>
                             <constraint firstItem="EQR-4O-3IU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dQh-9y-R9I"/>
