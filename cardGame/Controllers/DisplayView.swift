@@ -33,4 +33,11 @@ class UIDisplayView: UIView{
         
     }
     
+    func bombAnimation() {
+        UIView.animate(withDuration: 1, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 3, y: 3)
+            })
+        }
+    
+    
 }

@@ -70,24 +70,13 @@
 			children = (
 				E1AB015225667916004DECA2 /* AppDelegate.swift */,
 				E1AB015425667916004DECA2 /* SceneDelegate.swift */,
-				E1AB015625667916004DECA2 /* ViewController.swift */,
-				E1AB015825667916004DECA2 /* Main.storyboard */,
+				E1AB017E256AEE4A004DECA2 /* Controllers */,
+				E1AB0179256AED76004DECA2 /* Views */,
 				E1AB015B25667919004DECA2 /* Assets.xcassets */,
-				E1AB015D25667919004DECA2 /* LaunchScreen.storyboard */,
-				E1AB016025667919004DECA2 /* Info.plist */,
-				E1AB016D25681B3E004DECA2 /* DisplayView */,
 				E1AB016F256990CE004DECA2 /* Fonts */,
+				E1AB016025667919004DECA2 /* Info.plist */,
 			);
 			path = cardGame;
-			sourceTree = "<group>";
-		};
-		E1AB016D25681B3E004DECA2 /* DisplayView */ = {
-			isa = PBXGroup;
-			children = (
-				E1AB016A25681B22004DECA2 /* DisplayView.xib */,
-				E1AB016725681B0F004DECA2 /* DisplayView.swift */,
-			);
-			path = DisplayView;
 			sourceTree = "<group>";
 		};
 		E1AB016F256990CE004DECA2 /* Fonts */ = {
@@ -99,6 +88,25 @@
 				E1AB01712569910F004DECA2 /* digital-7.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E1AB0179256AED76004DECA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB015D25667919004DECA2 /* LaunchScreen.storyboard */,
+				E1AB015825667916004DECA2 /* Main.storyboard */,
+				E1AB016A25681B22004DECA2 /* DisplayView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1AB017E256AEE4A004DECA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB015625667916004DECA2 /* ViewController.swift */,
+				E1AB016725681B0F004DECA2 /* DisplayView.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
