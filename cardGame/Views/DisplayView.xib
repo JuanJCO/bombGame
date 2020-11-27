@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="digital-7.ttf">
-            <string>Digital-7</string>
+        <array key="DS-DIGI.TTF">
+            <string>DS-Digital</string>
         </array>
     </customFonts>
     <objects>
@@ -28,12 +28,12 @@
                     <rect key="frame" x="0.0" y="530.5" width="1024" height="305"/>
                 </imageView>
                 <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-e1-3n6">
-                    <rect key="frame" x="420" y="20" width="184.5" height="1326"/>
-                    <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="60"/>
+                    <rect key="frame" x="416.5" y="20" width="191.5" height="1326"/>
+                    <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="60"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=regular">
-                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="130"/>
+                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="130"/>
                     </variation>
                 </label>
             </subviews>

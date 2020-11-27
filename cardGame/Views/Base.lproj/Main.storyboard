@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="digital-7.ttf">
-            <string>Digital-7</string>
+        <array key="DS-DIGI.TTF">
+            <string>DS-Digital</string>
         </array>
     </customFonts>
     <scenes>
@@ -29,13 +29,13 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-D5-V3D" userLabel="Info">
-                                <rect key="frame" x="243" y="635" width="151" height="40"/>
-                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="30"/>
+                                <rect key="frame" x="231" y="633" width="163" height="42"/>
+                                <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
                                 <state key="normal" title="Instructions">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="90"/>
+                                    <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="90"/>
                                 </variation>
                                 <connections>
                                     <action selector="infoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7d-la-6MG"/>
@@ -85,18 +85,18 @@
                                 <rect key="frame" x="20" y="59" width="374" height="778"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUCCIONES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-T9-Hca">
-                                        <rect key="frame" x="51.5" y="50" width="271" height="45.5"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
+                                        <rect key="frame" x="39" y="50" width="296" height="50.5"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="50"/>
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="90"/>
+                                            <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="90"/>
                                         </variation>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRq-qW-rqZ" userLabel="InstruccionesTV">
-                                        <rect key="frame" x="20" y="145.5" width="334" height="542.5"/>
+                                        <rect key="frame" x="20" y="150.5" width="334" height="537.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">¡Hola! 
+                                        <string key="text">¡Hola! 
 
 Somos K-Boom Corporation. Hemos colocado esta bomba letal ultra-láser junto a sus instrucciones para desactivarla. 
 
@@ -114,12 +114,12 @@ Leer las instrucciones es opcional. Fallecer por una explosión masiva de 7 de c
 
 Suerte. 
 
-:)</mutableString>
+:)</string>
                                         <color key="textColor" systemColor="systemGreenColor"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
+                                            <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="50"/>
                                         </variation>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIC-xs-8kz">
@@ -167,10 +167,10 @@ Lo has conseguido.
 
 :)</string>
                                         <color key="textColor" systemColor="systemGreenColor"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="70"/>
+                                            <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="70"/>
                                         </variation>
                                     </textView>
                                 </subviews>

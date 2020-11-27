@@ -57,10 +57,10 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>digital-7 .ttf</string>
-		<string>digital-7 (italic).ttf</string>
-		<string>digital-7 (mono).ttf</string>
-		<string>digital-7 (mono italic).ttf</string>
+		<string>DS-DIGI.TTF</string>
+		<string>DS-DIGIB.TTF</string>
+		<string>DS-DIGII.TTF</string>
+		<string>DS-DIGIT.TTF</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
